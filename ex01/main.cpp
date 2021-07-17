@@ -1,3 +1,5 @@
+#include "span.hpp"
+
 int main()
 {
 Span sp = Span(5);
