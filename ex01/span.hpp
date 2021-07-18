@@ -13,12 +13,12 @@ class Span
 		Span();
 		std::vector<int> vector;
 		unsigned int len;
+		Span(const Span& copy);
+		Span& operator=(const Span& op);
 
 	public:
 		virtual ~Span();
 		Span(unsigned int N);
-		Span(const Span& copy);
-		Span& operator=(const Span& op);
 		void addNumber(int number);
 		unsigned int shortestSpan();
 		unsigned int longestSpan();

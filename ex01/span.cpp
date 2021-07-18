@@ -9,23 +9,6 @@ len(N)
 	vector.clear();
 }
 
-Span::Span(const Span& copy):
-len(copy.len)
-{
-	vector.clear();
-	// TODO
-}
-
-Span& Span::operator=(const Span& op)
-{
-	if (this == &op)
-		return (*this);
-	len = op.len;
-	vector.clear();
-	// TODO
-	return (*this);
-}
-
 void Span::addNumber(int number)
 {
 	if (vector.size() < len)

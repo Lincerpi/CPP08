@@ -2,8 +2,8 @@
 
 int main()
 {
-	srand(time(NULL));
-	Span sp = Span(5);
+	// srand(time(NULL));
+	Span sp(5);
 	sp.addNumber(5);
 	sp.addNumber(3);
 	sp.addNumber(17);
@@ -20,7 +20,7 @@ int main()
 	std::cout << sp.shortestSpan() << std::endl;
 	std::cout << sp.longestSpan() << std::endl;
 	// std::cout << "*******************" << std::endl;
-	// Span sp2 = Span(11000);
+	// Span sp2(11000);
 	// for (int i = 0; i < 11000; i++)
 	// 	sp2.addNumber(rand());
 	// std::cout << sp2.shortestSpan() << std::endl;
