@@ -5,6 +5,8 @@
 #include <iostream>
 #include <vector>
 #include <exception>
+#include <algorithm>
+#include <limits.h>
 
 class Span
 {
@@ -18,8 +20,8 @@ class Span
 		Span(const Span& copy);
 		Span& operator=(const Span& op);
 		void addNumber(int number);
-		int shortestSpan();
-		int longestSpan();
+		unsigned int shortestSpan();
+		unsigned int longestSpan();
 		class VectorFullException: public std::exception
 		{	virtual const char* what() const throw() { return ("Vector Full!"); } }; 
 		class NoNumberException: public std::exception
