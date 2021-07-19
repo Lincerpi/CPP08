@@ -1,29 +1,18 @@
 #include "mutantstack.hpp"
 
-template<class T>
-MutantStack<T>::MutantStack()
-{}
+//https://stackoverflow.com/questions/525365/does-stdstack-expose-iterators
 
-template<class T>
-MutantStack<T>::~MutantStack()
-{}
+// template<class T>
+// typename MutantStack<T>::iterator MutantStack<T>::begin()
+// {
+// 	return (this->end() - this->size());
+// }
 
-template<class T>
-MutantStack<T>::MutantStack(const MutantStack& copy)
-{}
-
-template<class T>
-MutantStack<T>& MutantStack<T>::operator=(const MutantStack& op)
-{}
-
-template<class T>
-typename MutantStack<T>::iterator MutantStack<T>::begin()
-{}
-
-template<class T>
-typename MutantStack<T>::iterator MutantStack<T>::end()
-{}
-
+// template<class T>
+// typename MutantStack<T>::iterator MutantStack<T>::end()
+// {
+// 	return (&this->top() + 1);
+// }
 
 
 
